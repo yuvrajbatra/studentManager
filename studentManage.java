@@ -4,18 +4,22 @@ public class studentManage {
 
 	public String Name;
 	public int RollNumber;
+	public String Dob;
+	public int StudentClass;
 
-	public studentManage(String Name, int RollNumber) {
-		this.Name = Name;
-		this.RollNumber = RollNumber;
+	public studentManage(String name, int rollNumber, String dob, int StudentClass) {
+		this.Name = name;
+		this.RollNumber = rollNumber;
+		this.Dob = dob;
+		this.StudentClass = StudentClass;
 	}
 
 	public String getName() {
 		return Name;
 	}
 
-	public void setName(String Name) {
-		this.Name = Name;
+	public void setName(String name) {
+		this.Name = name;
 	}
 
 	public int getRollNumber() {
@@ -23,9 +27,25 @@ public class studentManage {
 	}
 
 	public void setRollNumber(int rollNumber) {
-		this.RollNumber = RollNumber;
+		this.RollNumber = rollNumber;
+	}
+
+	public String getDob() {
+		return Dob;
+	}
+
+	public void setDob(String dob) {
+		this.Dob = dob;
+	}
+
+	public int getStudentClass() {
+		return StudentClass;
+	}
+
+	public void setStudentClass(int studentClass) {
+		this.StudentClass = studentClass;
 	}
 public void printInfo(){
-	System.out.println(getName()+ "your Roll Number is" +getRollNumber());
+	System.out.println(getName()+ " " + getRollNumber()+" " + getDob()+ " " + getStudentClass());
 }
 }
