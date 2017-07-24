@@ -45,7 +45,13 @@ public class studentManage {
 	public void setStudentClass(int studentClass) {
 		this.StudentClass = studentClass;
 	}
-public void printInfo(){
-	System.out.println(getName()+ " " + getRollNumber()+" " + getDob()+ " " + getStudentClass());
-}
+
+	public void printInfo() {
+		System.out.println("name-" + " " + getName() + "     " + "Roll Number-" + " " + getRollNumber() + "     "
+				+ "Date of birth-" + getDob() + "     " + "Class-" + getStudentClass());
+	}
+
+	public class test {
+
+	}
 }
