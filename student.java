@@ -1,13 +1,13 @@
-package studentManager;
+package student;
 
-public class studentManage {
+public class student {
 
 	public String Name;
 	public int RollNumber;
 	public String Dob;
 	public int StudentClass;
 
-	public studentManage(String name, int rollNumber, String dob, int StudentClass) {
+	public student(String name, int rollNumber, String dob, int StudentClass) {
 		this.Name = name;
 		this.RollNumber = rollNumber;
 		this.Dob = dob;
